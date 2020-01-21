@@ -1,0 +1,19 @@
+.machine-wrap {
+    margin-top: 60px;
+  }
+  
+  .well-wrap1 {
+    padding: 50px;
+  }
+  
+  #quoteBody {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  
+  #authorBody {
+    margin-left: 100px;
+    font-style: italic;
+    font-size: 18px;
+  }
