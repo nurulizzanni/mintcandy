@@ -303,9 +303,7 @@ choices.forEach(choice => {
     }, 500);
   });
 
-  result1Text.innerText=CORRECT1;
-  result2Text.innerText=CORRECT2;
-  result3Text.innerText=CORRECT3;
+ 
 });
 
 
