@@ -7,11 +7,6 @@ const result1Text = document.getElementById("result1");
 const result2Text = document.getElementById("result2");
 const result3Text = document.getElementById("result3");
 
-let currentQuestion = {};
-let acceptingAnswers = false;
-let score = 0;
-let questionCounter = 0;
-let availableQuesions = [];
 
 let questions = [
   {
@@ -207,9 +202,15 @@ let questions = [
 ];
 
 
+let currentQuestion = {};
+let acceptingAnswers = false;
+let score = 0;
+let questionCounter = 0;
+let availableQuestions = [];
+
 
 //CONSTANTS
-const MAX_QUESTIONS = 21;
+const MAX_QUESTIONS =3;
  CORRECT1 = 0;
  CORRECT2 = 0;
  CORRECT3 = 0;
@@ -217,19 +218,24 @@ const MAX_QUESTIONS = 21;
 startGame = () => {
   questionCounter = 0;
   score = 0;
-  availableQuesions = [...questions];
+  availableQuestions = [...questions];
   getNewQuestion();
+
 };
 
 getNewQuestion = () => {
   
-  if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+  if (questionCounter == MAX_QUESTIONS) {
     //go to the end page
-    return window.location.assign("score");
+    return window.location.assign("/score");
   }
+
   questionCounter++;
-  const questionIndex = Math.floor(Math.random() * availableQuesions.length);
-  currentQuestion = availableQuesions[questionIndex];
+    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+  //Update the progress bar
+  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+  currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
   question.num = currentQuestion.id;
 
@@ -239,7 +245,7 @@ getNewQuestion = () => {
     choice.innerText = currentQuestion["choice" + number];
   });
 
-  availableQuesions.splice(questionIndex, 1);
+  availableQuestions.splice(questionIndex, 1);
   acceptingAnswers = true;
 };
 
@@ -293,18 +299,80 @@ choices.forEach(choice => {
     score3Text.innerText = CORRECT3;
   }
 
-
-
+  
     selectedChoice.parentElement.classList.add(classToApply);
 
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
     }, 500);
-  });
-
- 
+  }); 
 });
 
 
 startGame();
+
+if (CORRECT3<6 ){
+  level = "normal";
+  result3.innerText = level;
+
+}
+if (CORRECT3>6 && CORRECT1<8  ){
+  level = "ringan";
+  result3.innerText = level;
+}
+if (CORRECT3>7 && CORRECT3<11 ){
+  level = "sederhana";
+  result3.innerText = level;
+}
+if (CORRECT3>10 && CORRECT3<13  ){
+  level = "teruk";
+  result3.innerText = level;
+}
+if (CORRECT3>14 ){
+  level = "sangat teruk";
+  result3.innerText = level;
+}
+/////////////////////////////////////////
+if (CORRECT2<5 ){
+  level = "normal";
+  result2.innerText = level;
+}
+if (CORRECT2>4 && CORRECT1<7  ){
+  level = "ringan";
+  result2.innerText = level;
+}
+if (CORRECT2>6 && CORRECT3<9 ){
+  level = "sederhana";
+  result2.innerText = level;
+}
+if (CORRECT2>8 && CORRECT3<11  ){
+  level = "teruk";
+  result2.innerText = level;
+}
+if (CORRECT2>10 ){
+  level = "sangat teruk";
+  result2.innerText = level;
+}
+////////////////////////////////////////
+
+if (CORRECT1<8 ){
+  level = "normal";
+  result1.innerText = level;
+}
+if (CORRECT1>7 && CORRECT1<10 ){
+  level = "ringan";
+  result1.innerText = level;
+}
+if (CORRECT1>9 && CORRECT3<14 ){
+  level = "sederhana";
+  result1.innerText = level;
+}
+if (CORRECT1>13 && CORRECT3<18 ){
+  level = "teruk";
+  result1.innerText = level;
+}
+if (CORRECT1>17 ){
+  level = "sangat teruk";
+  result1.innerText = level;
+}
