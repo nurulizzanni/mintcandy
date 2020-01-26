@@ -17,7 +17,7 @@
 								<div class="thumb-wrap relative">
 									<div class="thumb relative">
 										<div class="overlay overlay-bg"></div>	
-										<img class="img-fluid" src="{{asset('/frontend')}}/img/p1.jpg" alt="">
+										<img class="img-fluid" src="{{secure_asset('/frontend')}}/img/p1.jpg" alt="">
 									</div>
 									<div class="meta d-flex justify-content-between">
 										<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -39,7 +39,7 @@
 								<div class="thumb-wrap relative">
 									<div class="thumb relative">
 										<div class="overlay overlay-bg"></div>	
-										<img class="img-fluid" src="{{asset('/frontend')}}/img/p2.jpg" alt="">
+										<img class="img-fluid" src="{{secure_asset('/frontend')}}/img/p2.jpg" alt="">
 									</div>
 									<div class="meta d-flex justify-content-between">
 										<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -61,7 +61,7 @@
 								<div class="thumb-wrap relative">
 									<div class="thumb relative">
 										<div class="overlay overlay-bg"></div>	
-										<img class="img-fluid" src="{{asset('/frontend')}}/img/p3.jpg" alt="">
+										<img class="img-fluid" src="{{secure_asset('/frontend')}}/img/p3.jpg" alt="">
 									</div>
 									<div class="meta d-flex justify-content-between">
 										<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -83,7 +83,7 @@
 								<div class="thumb-wrap relative">
 									<div class="thumb relative">
 										<div class="overlay overlay-bg"></div>	
-										<img class="img-fluid" src="{{asset('/frontend')}}/img/p4.jpg" alt="">
+										<img class="img-fluid" src="{{secure_asset('/frontend')}}/img/p4.jpg" alt="">
 									</div>
 									<div class="meta d-flex justify-content-between">
 										<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -105,7 +105,7 @@
 								<div class="thumb-wrap relative">
 									<div class="thumb relative">
 										<div class="overlay overlay-bg"></div>	
-										<img class="img-fluid" src="{{asset('/frontend')}}/img/p1.jpg" alt="">
+										<img class="img-fluid" src="{{secure_asset('/frontend')}}/img/p1.jpg" alt="">
 									</div>
 									<div class="meta d-flex justify-content-between">
 										<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -127,7 +127,7 @@
 								<div class="thumb-wrap relative">
 									<div class="thumb relative">
 										<div class="overlay overlay-bg"></div>	
-										<img class="img-fluid" src="{{asset('/frontend')}}/img/p2.jpg" alt="">
+										<img class="img-fluid" src="{{secure_asset('/frontend')}}/img/p2.jpg" alt="">
 									</div>
 									<div class="meta d-flex justify-content-between">
 										<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -149,7 +149,7 @@
 								<div class="thumb-wrap relative">
 									<div class="thumb relative">
 										<div class="overlay overlay-bg"></div>	
-										<img class="img-fluid" src="{{asset('/frontend')}}/img/p3.jpg" alt="">
+										<img class="img-fluid" src="{{secure_asset('/frontend')}}/img/p3.jpg" alt="">
 									</div>
 									<div class="meta d-flex justify-content-between">
 										<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -171,7 +171,7 @@
 								<div class="thumb-wrap relative">
 									<div class="thumb relative">
 										<div class="overlay overlay-bg"></div>	
-										<img class="img-fluid" src="{{asset('/frontend')}}/img/p4.jpg" alt="">
+										<img class="img-fluid" src="{{secure_asset('/frontend')}}/img/p4.jpg" alt="">
 									</div>
 									<div class="meta d-flex justify-content-between">
 										<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
