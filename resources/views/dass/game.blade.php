@@ -29,6 +29,9 @@
                             <h1 class="hud-main-text" id="score1">
                             0
                             </h1>
+                            <h3 class="hud-main-text" id="result1">
+                            #
+                            </h3>
                         </div>
                         <div id="hud-item">
                             <p class="hud-prefix">
@@ -37,6 +40,9 @@
                             <h1 class="hud-main-text" id="score2">
                             0
                             </h1>
+                            <h3 class="hud-main-text" id="result2">
+                            #
+                            </h3>
                         </div>
                         <div id="hud-item">
                             <p class="hud-prefix">
@@ -45,6 +51,9 @@
                             <h1 class="hud-main-text" id="score3">
                             0
                             </h1>
+                            <h3 class="hud-main-text" id="result3">
+                            #
+                            </h3>
                         </div>
                         </div>
                         <h2 id="question">What is the answer to this questions?</h2>
@@ -64,6 +73,8 @@
                         <p class="choice-prefix">D</p>
                         <p class="choice-text" data-number="4">Choice 4</p>
                         </div>
+
+                       
                     </div>
                     </div>
                     </body>

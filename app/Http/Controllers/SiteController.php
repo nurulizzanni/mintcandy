@@ -15,4 +15,8 @@ class SiteController extends Controller
     {
         return view ('site.about');
     }
+    public function register()
+    {
+        return view ('site.register');
+    }
 }
