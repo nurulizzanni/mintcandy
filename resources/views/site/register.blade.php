@@ -22,7 +22,7 @@
 
 				<div class="container">
 					<div class="row justify-content-between align-items-center">
-						<div class="col-lg-6 col-md-6 search-course-left">
+						<div class="col-lg-3 col-md-6 search-course-left">
 							<h1 >
 								Get reduced fee <br>
 								during this Summer!
@@ -32,15 +32,15 @@
 							</p>
 							
 						</div>
-						<div class="col-lg-4 col-md-6 search-course-right section-gap">
+						<div class="col-lg-9 col-md-6 search-course-right section-gap">
                         {!! Form::open(['url' => '/postregister','class'=>'form-wrap']) !!}
 							
-						<h4 class="pb-20 text-center mb-30">REgister Here</h4>		
+						<h4 class="pb-20 text-center mb-30">Register Here</h4>		
 
                         {!! Form::text('first_name','',['class' => 'form-control','placeholder'=>' Fist Name']) !!}
                         {!! Form::text('last_name','',['class' => 'form-control','placeholder'=>' Last Name']) !!}
                         {!! Form::email('email','',['class' => 'form-control','placeholder'=>' Email']) !!}	
-                        {!! Form::text('password',['class' => 'form-control','placeholder'=>' Password']) !!}		
+                        {!! Form::password('password',['class' => 'form-control','placeholder'=>' Password']) !!}		
                         <div class="form-select" id="service-select">
                             {!! Form::select('gender',['' => 'Choose Gender','M'=>'Male', 'F'=>'Female'],'M'); !!}
                         </div>
