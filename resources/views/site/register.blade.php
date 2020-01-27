@@ -5,7 +5,7 @@
 				<div class="overlay overlay-bg"></div>	
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-between" style="height: 574px;">
-						<div class="about-content col-lg-9 col-md-12">
+						<div class="about-content col-lg-12 center">
 							<h1 class="text-white">
 								Register		
 							</h1>
