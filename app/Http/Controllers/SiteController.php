@@ -19,7 +19,7 @@ class SiteController extends Controller
     {
         return view ('site.register');
     }
-    public function postregister(Request request)
+    public function postregister(Request $request)
     {
         //insert ke table user
         $user = new \App\User;
