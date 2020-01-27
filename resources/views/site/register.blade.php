@@ -5,11 +5,11 @@
 				<div class="overlay overlay-bg"></div>	
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-between" style="height: 574px;">
-						<div class="banner-content col-lg-9 col-md-12">
-							<h1 class="text-uppercase">
+						<div class="about-content col-lg-9 col-md-12">
+							<h1 class="text-white">
 								Register		
 							</h1>
-							<p class="text-white link-nav"><a href="index.html">Home</a> <spanclass="lnr lnr-arrow-right"></span>
+							<p class="text-white link-nav"><a href="index.html">Home</a> <span class="lnr lnr-arrow-right"></span>
 							<a href="about.html">Register</a>	
 							</p>
 							
