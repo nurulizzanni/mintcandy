@@ -34,6 +34,6 @@ class SiteController extends Controller
          //insert ke table pengguna
          $request->request->add(['user_id'=> $user->id]);
          $pengguna=\App\Pengguna::create($request->all());
-         return redirect('/pengguna')->with('success', 'Data is submitted');
+         return redirect('/')->with('success', 'Data is submitted');
     }
 }
