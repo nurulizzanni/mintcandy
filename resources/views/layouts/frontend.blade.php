@@ -36,10 +36,7 @@
 	  			<div class="container">
 			  		<div class="row">
 			  			
-			  			<div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
-			  				<a href="tel:0181234567"><span class="lnr lnr-phone-handset"></span> <span class="text">0181234567</span></a>
-			  				<a href="mailto:mintcandy.herokuapp.com"><span class="lnr lnr-envelope"></span> <span class="text">mintcandy.herokuapp.com</span></a>			
-			  			</div>
+			  			
 			  		</div>			  					
 	  			</div>
 			</div>
