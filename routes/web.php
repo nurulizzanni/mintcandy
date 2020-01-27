@@ -13,7 +13,7 @@
 
 Route::get('/', 'SiteController@home');
 Route::get('/register','SiteController@register');
-Route::get('/postregister','SiteController@postregister');
+Route::post('/postregister','SiteController@postregister');
 Route::get('/about','SiteController@about');
 
 
