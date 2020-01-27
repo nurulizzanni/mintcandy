@@ -19,4 +19,21 @@ class SiteController extends Controller
     {
         return view ('site.register');
     }
+    public function postregister(Request request)
+    {
+        //insert ke table user
+        $user = new \App\User;
+        $user->role= 'pengguna';
+        $user->name= $request->first_name;
+        $user->email = $request ->email;
+        $user->password = bcrypt($request->password);
+        $user->remember_token=\Illuminate\Support\Str::random(60);
+        $user->save();
+        
+
+         //insert ke table pengguna
+         $request->request->add(['user_id'=> $user->id]);
+         $pengguna=\App\Pengguna::create($request->all());
+         return redirect('/pengguna')->with('success', 'Data is submitted');
+    }
 }

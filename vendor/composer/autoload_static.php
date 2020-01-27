@@ -31,6 +31,7 @@ class ComposerStaticInit60aa8619c89179c8d8baa32a4773aa38
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
+        'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -160,6 +161,7 @@ class ComposerStaticInit60aa8619c89179c8d8baa32a4773aa38
         'C' => 
         array (
             'Cron\\' => 5,
+            'Collective\\Html\\' => 16,
             'Clue\\React\\Buzz\\' => 16,
             'Carbon\\' => 7,
         ),
@@ -468,6 +470,10 @@ class ComposerStaticInit60aa8619c89179c8d8baa32a4773aa38
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
+        'Collective\\Html\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravelcollective/html/src',
+        ),
         'Clue\\React\\Buzz\\' => 
         array (
             0 => __DIR__ . '/..' . '/clue/buzz-react/src',
@@ -523,6 +529,10 @@ class ComposerStaticInit60aa8619c89179c8d8baa32a4773aa38
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Events\\BlockEvent' => __DIR__ . '/../..' . '/app/Events/BlockEvent.php',
+        'App\\Events\\MsgReadEvent' => __DIR__ . '/../..' . '/app/Events/MsgReadEvent.php',
+        'App\\Events\\PrivateChatEvent' => __DIR__ . '/../..' . '/app/Events/PrivateChatEvent.php',
+        'App\\Events\\SessionEvent' => __DIR__ . '/../..' . '/app/Events/SessionEvent.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -660,6 +670,13 @@ class ComposerStaticInit60aa8619c89179c8d8baa32a4773aa38
         'Clue\\React\\Buzz\\Message\\MessageFactory' => __DIR__ . '/..' . '/clue/buzz-react/src/Message/MessageFactory.php',
         'Clue\\React\\Buzz\\Message\\ReadableBodyStream' => __DIR__ . '/..' . '/clue/buzz-react/src/Message/ReadableBodyStream.php',
         'Clue\\React\\Buzz\\Message\\ResponseException' => __DIR__ . '/..' . '/clue/buzz-react/src/Message/ResponseException.php',
+        'Collective\\Html\\Componentable' => __DIR__ . '/..' . '/laravelcollective/html/src/Componentable.php',
+        'Collective\\Html\\Eloquent\\FormAccessible' => __DIR__ . '/..' . '/laravelcollective/html/src/Eloquent/FormAccessible.php',
+        'Collective\\Html\\FormBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/FormBuilder.php',
+        'Collective\\Html\\FormFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/FormFacade.php',
+        'Collective\\Html\\HtmlBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlBuilder.php',
+        'Collective\\Html\\HtmlFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlFacade.php',
+        'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
