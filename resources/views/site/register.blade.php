@@ -39,7 +39,7 @@
 
                         {!! Form::text('first_name','',['class' => 'form-control','placeholder'=>' Fist Name']) !!}
                         {!! Form::text('last_name','',['class' => 'form-control','placeholder'=>' Last Name']) !!}
-                        {!! Form::email'email','',['class' => 'form-control','placeholder'=>' Email']) !!}	
+                        {!! Form::email('email','',['class' => 'form-control','placeholder'=>' Email']) !!}	
                         {!! Form::text('password',['class' => 'form-control','placeholder'=>' Password']) !!}		
                         <div class="form-select" id="service-select">
                             {!! Form::select(['gender','',['' => 'Choose Gender','M'=>'Male', 'F'=>'Female'],'M') !!}
