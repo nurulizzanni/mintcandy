@@ -11,7 +11,7 @@
 	<!-- VENDOR CSS -->
 	<link rel="stylesheet" href="{{secure_asset('admin/assets/vendor/bootstrap/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{secure_asset('admin/assets/vendor/font-awesome/css/font-awesome.min.css')}}">
-	<link rel="stylesheet" href="{{secure_asset('admin/assets/vendor/linearicons/style.css')}}">
+	<link rel="stylesheet" href="{{asset('admin/assets/vendor/linearicons/style.css')}}">
 
 	
 	<!-- MAIN CSS -->
