@@ -44,7 +44,7 @@
                         <div class="form-select" id="service-select">
                             {!! Form::select('gender',['' => 'Choose Gender','M'=>'Male', 'F'=>'Female'],'M'); !!}
                         </div>
-                        <input type="submit" class="primary-btn text-uppercase" value="Submit" style=text-align:center>      
+                        <input type="submit" class="primary-btn text-uppercase" value="Submit" style="text-align:center;">      
                         {!! Form::close() !!}
 						
 						</div>
