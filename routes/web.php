@@ -22,7 +22,7 @@ Route::get('/logout','AuthController@logout');
 Route::get('/logout','AuthController@logout');
 
 
-Route::group(['middleware'=>'auth','checkRole:admin'], function(){
+
 
     Route::get('/pengguna','PenggunaController@index');
     Route::post('/pengguna/create','PenggunaController@create');
@@ -33,7 +33,7 @@ Route::group(['middleware'=>'auth','checkRole:admin'], function(){
     Route::post('/pengguna/{id}/addnilai', 'PenggunaController@addnilai');
     Route::get('/pengguna/{id}/{idtest}/deletenilai', 'PenggunaController@deletenilai');
 
-
+Route::group(['middleware'=>'auth','checkRole:admin'], function(){
     Route::get('/start', 'PenggunaController@start');
     Route::get('/game', 'PenggunaController@game');
     Route::get('/score', 'PenggunaController@score')->name('score');
