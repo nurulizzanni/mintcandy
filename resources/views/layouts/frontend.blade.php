@@ -20,7 +20,7 @@
 			<!--
 			CSS
 			============================================= -->
-			<link rel="stylesheet" href="{{secure_asset('/frontend')}}/css/linearicons.css">
+			<link rel="stylesheet" href="{{asset('/frontend')}}/css/linearicons.css">
 			<link rel="stylesheet" href="{{secure_asset('/frontend')}}/css/font-awesome.min.css">
 			<link rel="stylesheet" href="{{secure_asset('/frontend')}}/css/bootstrap.css">
 			<link rel="stylesheet" href="{{secure_asset('/frontend')}}/css/magnific-popup.css">
