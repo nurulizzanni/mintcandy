@@ -12,9 +12,9 @@ class Pengguna extends Model
     public function getAvatar()
     {
         if(!$this->avatar){
-            return asset('images/default.jpg');
+            return secure_asset('images/default.jpg');
         }
-        return asset('images/'.$this->avatar);
+        return secure_asset('images/'.$this->avatar);
     }
 
     public function test()
