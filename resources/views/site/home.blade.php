@@ -10,13 +10,12 @@
 					<div class="row fullscreen d-flex align-items-center justify-content-between">
 						<div class="banner-content col-lg-9 col-md-12">
 							<h1 class="text-uppercase">
-								We Ensure better education
-								for a better world			
+								Dear Stress, Let's Break Up!			
 							</h1>
 							<p class="pt-10 pb-10">
-								In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space telescope known as the Hubble.
+								Calculate your stress level and find some help...
 							</p>
-							<a href="#" class="primary-btn text-uppercase">Get Started</a>
+							<a href="/login" class="primary-btn text-uppercase">Get Started</a>
 						</div>										
 					</div>
 				</div>					
@@ -28,10 +27,10 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 cta-left">
-							<h1>Not Yet Satisfied with our Trend?</h1>
+							<h1>Surround Yourself With Supportive People</h1>
 						</div>
 						<div class="col-lg-4 cta-right">
-							<a class="primary-btn wh" href="#">view our blog</a>
+							<a class="primary-btn wh" href="/register">Register Now</a>
 						</div>
 					</div>
 				</div>	

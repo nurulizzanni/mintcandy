@@ -1,7 +1,7 @@
 @extends('layouts.frontend')
 
 @section('content')
-<section class="banner-area relative" id="home">
+<section class="banner-area relative" id="home" style="background: url('{{config('stress.banner')}}');">
 				<div class="overlay overlay-bg"></div>	
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-between" style="height: 574px;">
@@ -9,8 +9,8 @@
 							<h1 class="text-white">
 								Register		
 							</h1>
-							<p class="text-white link-nav"><a href="index.html">Home</a> <span class="lnr lnr-arrow-right"></span>
-							<a href="about.html">Register</a>	
+							<p class="text-white link-nav"><a href="/">Home</a> <span class="lnr lnr-arrow-right"></span>
+							<a href="/register">Register</a>	
 							</p>
 							
 						</div>										
@@ -24,12 +24,10 @@
 					<div class="row justify-content-between align-items-center">
 						<div class="col-lg-3 col-md-6 search-course-left">
 							<h1 >
-								Get reduced fee <br>
-								during this Summer!
+								Positive Thoughts, <br>
+								Positive Life.
 							</h1>
-							<p>
-								inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach.
-							</p>
+							
 							
 						</div>
 						<div class="col-lg-9 col-md-6 search-course-right section-gap">
