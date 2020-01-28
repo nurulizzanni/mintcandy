@@ -24,7 +24,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 1
+    "id123": 1
 
   },
   {
@@ -33,7 +33,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 2
+    "id123": 2
 
   },
   {
@@ -42,7 +42,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 3
+    "id123": 3
 
   },
   {
@@ -51,7 +51,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 4
+    "id123": 4
 
   },
   {
@@ -60,7 +60,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 5
+    "id123": 5
 
   },
   {
@@ -69,7 +69,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 6
+    "id123": 6
 
   },
   {
@@ -78,7 +78,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 7
+    "id123": 7
 
   },
   {
@@ -87,7 +87,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 8
+    "id123": 8
 
   },
   {
@@ -96,7 +96,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 9
+    "id123": 9
 
   },
   {
@@ -105,7 +105,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 10
+    "id123": 10
 
   },
   {
@@ -114,7 +114,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 11
+    "id123": 11
 
   },
   {
@@ -123,7 +123,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 12
+    "id123": 12
 
   },
   {
@@ -132,7 +132,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 13
+    "id123": 13
   
   },
   {
@@ -141,7 +141,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 14
+    "id123": 14
 
   },
   {
@@ -150,7 +150,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 15
+    "id123": 15
 
   },
   {
@@ -159,7 +159,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 16
+    "id123": 16
 
   },
   {
@@ -168,7 +168,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 17
+    "id123": 17
 
   },
   {
@@ -177,7 +177,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 18
+    "id123": 18
  
   },
   {
@@ -186,7 +186,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 19
+    "id123": 19
 
   },
   {
@@ -195,7 +195,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 20
+    "id123": 20
 
   },
   {
@@ -204,7 +204,7 @@ let availableQuestions = [
     "choice2": "Jarang",
     "choice3": "Kerap",
     "choice4": "Sangat Kerap",
-    "id": 21
+    "id123": 21
 
   }
 ];
@@ -241,7 +241,7 @@ getAns = () => {
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question123;
-  question.num = currentQuestion.id;
+  question.num = currentQuestion.id123;
 
 
   choices.forEach(choice => {
