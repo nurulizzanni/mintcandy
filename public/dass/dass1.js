@@ -1,6 +1,6 @@
 const question = document.getElementById("question123");
-const choices = Array.from(document.getElementsByClassName("choice-text1"));
-const progressText = document.getElementById("progressText1");
+const choices = Array.from(document.getElementsByClassName("choice-text"));
+const progressText = document.getElementById("progressText");
 const progressBarFull = document.getElementById("progressBarFull");
 const score1Text = document.getElementById("score1");
 const score2Text = document.getElementById("score2");
@@ -8,9 +8,6 @@ const score3Text = document.getElementById("score3");
 const result1Text = document.getElementById("result1");
 const result2Text = document.getElementById("result2");
 const result3Text = document.getElementById("result3");
-
-
-let questions =[];
 
 
 let currentQuestion = {};
