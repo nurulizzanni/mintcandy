@@ -65,7 +65,7 @@
 	<script src="{{secure_asset('admin/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
 	<script src="{{secure_asset('admin/assets/scripts/klorofil-common.js')}}"></script>
 	<script src="{{secure_asset('dass/score.js')}}"></script>
-	<script src="{{secure_asset('dass/game.js')}}"></script>
+	<script src="{{secure_asset('dass/dass1.js')}}"></script>
 	<script src="{{secure_asset('dass/end.js')}}"></script>
 	<script src="{{secure_asset('quote/quote.js')}}"></script>
 	<script src="{{secure_asset('js/app.js') }}"></script>
