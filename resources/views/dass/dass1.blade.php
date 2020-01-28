@@ -15,7 +15,7 @@
                     <div id="game" class="justify-center1 flex-column1">
                         <div id="hud">
                         <div id="hud-item">
-                            <p id="progressText" class="hud-prefix">
+                            <p id="progressText1" class="hud-prefix">
                             Questions
                             </p>
                             <div id="progressBar">
