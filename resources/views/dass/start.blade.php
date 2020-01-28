@@ -15,7 +15,7 @@
                             
                             
                             <h1>DASS Test</h1> 
-                            <a class="btn1" href="/game">START</a>
+                            <a class="btn1" href="/dass1">START</a>
                         
                             
                         </div>
