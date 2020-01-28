@@ -51,7 +51,7 @@ newGame = () => {
 getAns = () => {
   
 
-  if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+  if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     //go to the end page
     return window.location.assign("/score");
   }
@@ -61,7 +61,7 @@ getAns = () => {
   //Update the progress bar
   progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
-  const questionIndex = Math.floor(Math.random() * availableQuesions.length);
+  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
   question.num = currentQuestion.id;
