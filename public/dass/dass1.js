@@ -1,4 +1,4 @@
-const question = document.getElementById("question123");
+const question = document.getElementById("question5");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById("progressText");
 const progressBarFull = document.getElementById("progressBarFull");
@@ -12,7 +12,6 @@ const result3Text = document.getElementById("result3");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
-let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 let questions=[
@@ -208,7 +207,7 @@ let questions=[
 ];
 
 //CONSTANTS
-const MAX_QUESTIONS =3;
+const MAX_QUESTIONS =21;
  CORRECT1 = 0;
  CORRECT2 = 0;
  CORRECT3 = 0;
