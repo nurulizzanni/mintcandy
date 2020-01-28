@@ -30,7 +30,7 @@
 					<div class="left">
 						<div class="content">
 							<div class="header">
-								<div class="logo text-center"><img src="{{secure_asset('admin/assets/img/mintlogo.png')}}" alt="Klorofil Logo"></div>
+								<div class="logo text-center"><img src="{{secure_asset('/frontend')}}/img/mintlogo.png" alt="mintcandy Logo"></div>
 								<p class="lead">Login to your account</p>
 							</div>
                             <form class="form-auth-small" action="/postlogin" method="POST">
