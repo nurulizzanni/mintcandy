@@ -1,5 +1,5 @@
-const question = document.getElementById("question");
-const choices = Array.from(document.getElementsByClassName("choice-text"));
+const question = document.getElementById("question1");
+const choices = Array.from(document.getElementsByClassName("choice-text1"));
 const progressText = document.getElementById("progressText");
 const progressBarFull = document.getElementById("progressBarFull");
 const score1Text = document.getElementById("score1");
