@@ -10,10 +10,7 @@ const result2Text = document.getElementById("result2");
 const result3Text = document.getElementById("result3");
 
 
-let questions = [
-  
- 
-];
+let questions =[];
 
 
 let currentQuestion = {};
@@ -22,7 +19,18 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-
+fetch("questions.json")
+  .then(res => {
+    return res.json();
+  })
+  .then(loadedQuestions => {
+    console.log(loadedQuestions);
+    questions = loadedQuestions;
+    startGame();
+  })
+  .catch(err => {
+    console.error(err);
+  });
 
 //CONSTANTS
 const MAX_QUESTIONS =3;
@@ -48,6 +56,11 @@ getNewQuestion = () => {
     return window.location.assign("/score");
   }
  
+  questionCounter++;
+  progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+  //Update the progress bar
+  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;

@@ -37,7 +37,7 @@ Route::get('/logout','AuthController@logout');
 
 Route::group(['middleware'=>'auth','checkRole:admin'], function(){
     Route::get('/start', 'PenggunaController@start');
-    Route::get('/game', 'PenggunaController@game');
+    Route::get('/dass1', 'PenggunaController@game');
     Route::get('/score', 'PenggunaController@score')->name('score');
 
     Route::get('/inspiration', 'PenggunaController@inspiration');
