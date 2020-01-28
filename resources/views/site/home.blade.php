@@ -27,7 +27,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 cta-left">
-							<h1>Surround Yourself With Supportive People</h1>
+							<h1>Surround Yourself With Supportive People...</h1>
 						</div>
 						<div class="col-lg-4 cta-right">
 							<a class="primary-btn wh" href="/register">Register Now</a>

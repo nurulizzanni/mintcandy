@@ -43,7 +43,7 @@
 		    <div class="container main-menu">
 		    	<div class="row align-items-center justify-content-between d-flex">
 			      <div id="logo">
-			        <a href="index.html"><img src="{{secure_asset('/frontend')}}/img/mintlogo.png" alt="" title="" /></a>
+			       <img src="{{secure_asset('/frontend')}}/img/mintlogo.png" alt="" title="" />
 			      </div>
 			      <nav id="nav-menu-container">
 			        <ul class="nav-menu">

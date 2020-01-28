@@ -30,7 +30,7 @@
 					<div class="left">
 						<div class="content">
 							<div class="header">
-								<div class="logo text-center"><img src="{{secure_asset('admin/assets/img/logo-dark.png')}}" alt="Klorofil Logo"></div>
+								<div class="logo text-center"><img src="{{secure_asset('admin/assets/img/mintlogo.png')}}" alt="MintCandy Logo"></div>
 								<p class="lead">Login to your account</p>
 							</div>
                             <form class="form-auth-small" action="/postlogin" method="POST">
@@ -51,19 +51,21 @@
 								</div>
 								<button type="submit" class="btn btn-primary btn-lg btn-block">LOGIN</button>
 								<div class="bottom">
-									<span class="helper-text"><i class="fa fa-lock"></i> <a href="#">Forgot password?</a></span>
+									<span class="helper-text"><i class="fa fa-lock"></i> <a href="/register">New User?</a></span>
 								</div>
 							</form>
 						</div>
 					</div>
 					<div class="right">
-						<div class="overlay"></div>
-						<div class="content text">
-							<h1 class="heading">Free Bootstrap dashboard template</h1>
-							<p>by The Develovers</p>
-						</div>
+						<div class="overlay" ><img src="{{secure_asset('/frontend')}}/img/login.jpg" alt="" title="" /></div>
+						
 					</div>
 					<div class="clearfix"></div>
+					<footer>
+						<div class="container-fluid">
+							<p class="copyright"> <a href="https://www.freepik.com/free-photos-vectors/business">Business vector created by freepik - www.freepik.com</a></p>
+						</div>
+					</footer>
 				</div>
 			</div>
 		</div>
