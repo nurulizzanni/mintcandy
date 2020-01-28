@@ -30,7 +30,7 @@
 					<div class="left">
 						<div class="content">
 							<div class="header">
-								<div class="logo text-center"><img src="{{secure_asset('admin/assets/img/mintlogo.png')}}" alt="MintCandy Logo"></div>
+								<div class="logo text-center"><img src="{{secure_asset('admin/assets/img/mintlogo.png')}}" alt="Klorofil Logo"></div>
 								<p class="lead">Login to your account</p>
 							</div>
                             <form class="form-auth-small" action="/postlogin" method="POST">
@@ -57,15 +57,10 @@
 						</div>
 					</div>
 					<div class="right">
-						<div class="overlay" ><img src="{{secure_asset('/frontend')}}/img/login.jpg" alt="" title="" /></div>
+						<div class="overlay"></div>
 						
 					</div>
 					<div class="clearfix"></div>
-					<footer>
-						<div class="container-fluid">
-							<p class="copyright"> <a href="https://www.freepik.com/free-photos-vectors/business">Business vector created by freepik - www.freepik.com</a></p>
-						</div>
-					</footer>
 				</div>
 			</div>
 		</div>
