@@ -17,7 +17,8 @@ let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
-let availableQuestions = [
+let availableQuestions = [];
+let questions=[
   {
     "question123":"Saya rasa susah untuk bertenang",
     "choice1": "Tidak Pernah",
