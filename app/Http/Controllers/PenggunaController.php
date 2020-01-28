@@ -111,14 +111,14 @@ class PenggunaController extends Controller
         return view('dass.start',['pengguna'=>$pengguna]);
 
     }
-    public function game()
+    public function dass1()
     {
         $pengguna= \App\Pengguna::all();
         //dd($pengguna);
         //$path = './questions.json';
        // $content = json_decode(file_get_contents($path), true);
 
-        return view ('dass.game',['pengguna'=>$pengguna]);
+        return view ('dass.dass1',['pengguna'=>$pengguna]);
     }
     public function score()
     {
