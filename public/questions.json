@@ -1,6 +1,6 @@
 [
   {
-    "question":"Saya rasa susah untuk bertenang",
+    "question123":"Saya rasa susah untuk bertenang",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -9,7 +9,7 @@
 
   },
   {
-    "question":"Saya sedar mulut saya rasa kering",
+    "question123":"Saya sedar mulut saya rasa kering",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -18,7 +18,7 @@
 
   },
   {
-    "question":"Saya seolah-olah tidak dapat mengalami perasaan positif sama sekali",
+    "question123":"Saya seolah-olah tidak dapat mengalami perasaan positif sama sekali",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -27,7 +27,7 @@
 
   },
   {
-    "question":"Saya mengalami kesukaran bernafas (contohnya, bernafas terlalu cepat, tercungap-cungap walaupun tidak melakukan aktiviti fizikal)",
+    "question123":"Saya mengalami kesukaran bernafas (contohnya, bernafas terlalu cepat, tercungap-cungap walaupun tidak melakukan aktiviti fizikal)",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -36,7 +36,7 @@
 
   },
   {
-    "question":"Saya rasa tidak bersemangat untuk memulakan sesuatu keadaan",
+    "question123":"Saya rasa tidak bersemangat untuk memulakan sesuatu keadaan",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -45,7 +45,7 @@
 
   },
   {
-    "question":"Saya cenderung bertindak secara berlebihan kepada sesuatu keadaan",
+    "question123":"Saya cenderung bertindak secara berlebihan kepada sesuatu keadaan",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -54,7 +54,7 @@
 
   },
   {
-    "question":"Saya pernah menggeletar (contohnya tangan)",
+    "question123":"Saya pernah menggeletar (contohnya tangan)",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -63,7 +63,7 @@
 
   },
   {
-    "question":"Saya rasa saya terlalu gelisahan",
+    "question123":"Saya rasa saya terlalu gelisahan",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -72,7 +72,7 @@
 
   },
   {
-    "question":"Saya risau akan berlaku keadaan di mana saya panik dan berkelakuan bodoh",
+    "question123":"Saya risau akan berlaku keadaan di mana saya panik dan berkelakuan bodoh",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -81,7 +81,7 @@
 
   },
   {
-    "question":"Saya rasa tidak ada apa yang saya harapkan (putus harapan)",
+    "question123":"Saya rasa tidak ada apa yang saya harapkan (putus harapan)",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -90,7 +90,7 @@
 
   },
   {
-    "question":"Saya dapati saya mudah resah",
+    "question123":"Saya dapati saya mudah resah",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -99,7 +99,7 @@
 
   },
   {
-    "question":"Saya berasa sukar untuk relaks",
+    "question123":"Saya berasa sukar untuk relaks",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -108,7 +108,7 @@
 
   },
   {
-    "question":"Saya rasa muram dan sedih",
+    "question123":"Saya rasa muram dan sedih",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -117,7 +117,7 @@
   
   },
   {
-    "question":"Saya tidak boleh terima apa jua yang menghalangi saya daripada meneruskan apa yang saya sedang lakukan",
+    "question123":"Saya tidak boleh terima apa jua yang menghalangi saya daripada meneruskan apa yang saya sedang lakukan",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -126,7 +126,7 @@
 
   },
   {
-    "question":"Saya rasa hampir panik",
+    "question123":"Saya rasa hampir panik",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -135,7 +135,7 @@
 
   },
   {
-    "question":"Saya tidak bersemangat langsung",
+    "question123":"Saya tidak bersemangat langsung",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -144,7 +144,7 @@
 
   },
   {
-    "question":"Saya rasa diri saya tidak berharga",
+    "question123":"Saya rasa diri saya tidak berharga",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -153,7 +153,7 @@
 
   },
   {
-    "question":"Saya mudah tersinggung",
+    "question123":"Saya mudah tersinggung",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -162,7 +162,7 @@
  
   },
   {
-    "question":"Walaupun saya tidak melakukan aktiviti fizikal, saya sedar akan debaran jantung saya (contoh degupan jantung lebih cepat)",
+    "question123":"Walaupun saya tidak melakukan aktiviti fizikal, saya sedar akan debaran jantung saya (contoh degupan jantung lebih cepat)",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -171,7 +171,7 @@
 
   },
   {
-    "question":"Saya rasa takut tanpa sebab",
+    "question123":"Saya rasa takut tanpa sebab",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",
@@ -180,7 +180,7 @@
 
   },
   {
-    "question":"Saya rasa hidup ini tidak bererti lagi",
+    "question123":"Saya rasa hidup ini tidak bererti lagi",
     "choice1": "Tidak Pernah",
     "choice2": "Jarang",
     "choice3": "Kerap",

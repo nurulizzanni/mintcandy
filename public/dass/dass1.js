@@ -1,4 +1,4 @@
-const question = document.getElementById("question1");
+const question = document.getElementById("question123");
 const choices = Array.from(document.getElementsByClassName("choice-text1"));
 const progressText = document.getElementById("progressText1");
 const progressBarFull = document.getElementById("progressBarFull");
@@ -17,20 +17,197 @@ let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
-let availableQuestions = [];
+let availableQuestions = [
+  {
+    "question123":"Saya rasa susah untuk bertenang",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 1
 
-fetch("questions.json")
-  .then(res => {
-    return res.json();
-  })
-  .then(loadedQuestions => {
-    console.log(loadedQuestions);
-    questions = loadedQuestions;
-    newGame();
-  })
-  .catch(err => {
-    console.error(err);
-  });
+  },
+  {
+    "question123":"Saya sedar mulut saya rasa kering",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 2
+
+  },
+  {
+    "question123":"Saya seolah-olah tidak dapat mengalami perasaan positif sama sekali",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 3
+
+  },
+  {
+    "question123":"Saya mengalami kesukaran bernafas (contohnya, bernafas terlalu cepat, tercungap-cungap walaupun tidak melakukan aktiviti fizikal)",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 4
+
+  },
+  {
+    "question123":"Saya rasa tidak bersemangat untuk memulakan sesuatu keadaan",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 5
+
+  },
+  {
+    "question123":"Saya cenderung bertindak secara berlebihan kepada sesuatu keadaan",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 6
+
+  },
+  {
+    "question123":"Saya pernah menggeletar (contohnya tangan)",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 7
+
+  },
+  {
+    "question123":"Saya rasa saya terlalu gelisahan",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 8
+
+  },
+  {
+    "question123":"Saya risau akan berlaku keadaan di mana saya panik dan berkelakuan bodoh",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 9
+
+  },
+  {
+    "question123":"Saya rasa tidak ada apa yang saya harapkan (putus harapan)",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 10
+
+  },
+  {
+    "question123":"Saya dapati saya mudah resah",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 11
+
+  },
+  {
+    "question123":"Saya berasa sukar untuk relaks",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 12
+
+  },
+  {
+    "question123":"Saya rasa muram dan sedih",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 13
+  
+  },
+  {
+    "question123":"Saya tidak boleh terima apa jua yang menghalangi saya daripada meneruskan apa yang saya sedang lakukan",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 14
+
+  },
+  {
+    "question123":"Saya rasa hampir panik",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 15
+
+  },
+  {
+    "question123":"Saya tidak bersemangat langsung",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 16
+
+  },
+  {
+    "question123":"Saya rasa diri saya tidak berharga",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 17
+
+  },
+  {
+    "question123":"Saya mudah tersinggung",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 18
+ 
+  },
+  {
+    "question123":"Walaupun saya tidak melakukan aktiviti fizikal, saya sedar akan debaran jantung saya (contoh degupan jantung lebih cepat)",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 19
+
+  },
+  {
+    "question123":"Saya rasa takut tanpa sebab",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 20
+
+  },
+  {
+    "question123":"Saya rasa hidup ini tidak bererti lagi",
+    "choice1": "Tidak Pernah",
+    "choice2": "Jarang",
+    "choice3": "Kerap",
+    "choice4": "Sangat Kerap",
+    "id": 21
+
+  }
+];
 
 //CONSTANTS
 const MAX_QUESTIONS =3;
@@ -63,7 +240,7 @@ getAns = () => {
 
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
-  question.innerText = currentQuestion.question;
+  question.innerText = currentQuestion.question123;
   question.num = currentQuestion.id;
 
 
