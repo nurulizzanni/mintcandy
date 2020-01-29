@@ -44,8 +44,8 @@
                                 </h2>
                                 </div>
                             </dic>
-                            <a class="btn1" href="/dass1">Play</a>
-                            <a class="btn1" href="/score">Result</a>
+                            <a class="btn1" href="/dass1">Start Again</a>
+                           
                             
                         </div>
                     </div>
