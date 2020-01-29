@@ -23,28 +23,28 @@
                                 <p class="hud-prefix">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
                                 Stress
                                 </p>
-                                <h1 class="hud-main-text" id="result1">
+                                <h2 class="hud-main-text" id="result01">
                                 0
-                                </h1>
+                                </h2>
                                 </div>
                                 <div id="hud-item">
                                 <p class="hud-prefix">
                                 Anxiety
                                 </p>
-                                <h1 class="hud-main-text" id="result2">
+                                <h2 class="hud-main-text" id="result02">
                                 0
-                                </h1>
+                                </h2>
                                 </div>
                                 <div id="hud-item">
                                 <p class="hud-prefix">
                                 Depression
                                 </p>
-                                <h1 class="hud-main-text" id="result3">
+                                <h2 class="hud-main-text" id="result03">
                                 0
-                                </h1>
+                                </h2>
                                 </div>
                             </dic>
-                            <a class="btn1" href="/game">Play</a>
+                            <a class="btn1" href="/dass1">Play</a>
                             <a class="btn1" href="/score">Result</a>
                             
                         </div>

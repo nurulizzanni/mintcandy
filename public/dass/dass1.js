@@ -1,27 +1,36 @@
-const question = document.getElementById("question5");
+const question = document.getElementById("question123");
+const idQue = document.getElementById("id000");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById("progressText");
+const scoreText1 = document.getElementById("score1");
+const scoreText2 = document.getElementById("score2");
+const scoreText3 = document.getElementById("score3");
+
 const progressBarFull = document.getElementById("progressBarFull");
-const score1Text = document.getElementById("score1");
-const score2Text = document.getElementById("score2");
-const score3Text = document.getElementById("score3");
-const result1Text = document.getElementById("result1");
-const result2Text = document.getElementById("result2");
-const result3Text = document.getElementById("result3");
-
-
 let currentQuestion = {};
 let acceptingAnswers = false;
+let score = 0;
 let questionCounter = 0;
-let availableQuestions = [];
-let questions=[
+let availableQuesions = [];
+localStorage.clear();
+sessionStorage.clear();
+
+let questions = [
   {
     question123:"Saya rasa susah untuk bertenang",
     choice1: "Tidak Pernah",
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 1
+    id123: 1,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -30,7 +39,15 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 2
+    id123: 2,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -39,7 +56,15 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 3
+    id123: 3,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -48,7 +73,15 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 4
+    id123: 4,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -57,7 +90,15 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 5
+    id123: 5,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -66,7 +107,15 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 6
+    id123: 6,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -75,7 +124,15 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 7
+    id123: 7,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -84,7 +141,15 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 8
+    id123: 8,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -93,7 +158,15 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 9
+    id123: 9,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -102,7 +175,15 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 10
+    id123: 10,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -111,7 +192,15 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 11
+    id123: 11,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -120,7 +209,15 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 12
+    id123: 12,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -129,7 +226,15 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 13
+    id123: 13,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
   
   },
   {
@@ -138,7 +243,16 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 14
+    id123: 14,
+    test1: 1,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -147,7 +261,16 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 15
+    id123: 15,
+    test1: 1,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -156,7 +279,16 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 16
+    id123: 16,
+    test1: 1,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -165,7 +297,16 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 17
+    id123: 17,
+    test1: 1,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -174,7 +315,16 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 18
+    id123: 18,
+    test1: 1,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
  
   },
   {
@@ -183,7 +333,16 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 19
+    id123: 19,
+    test1: 1,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -192,7 +351,16 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 20
+    id123: 20,
+    test1: 1,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   },
   {
@@ -201,56 +369,110 @@ let questions=[
     choice2: "Jarang",
     choice3: "Kerap",
     choice4: "Sangat Kerap",
-    id123: 21
+    id123: 21,
+    test1: 1,
+    test2: 2,
+    test3: 3,
+    test4: 4,
+    level1: "normal",
+    level2: "ringan",
+    level3: "sederhana",
+    level4: "teruk",
+    level5: "sangat teruk"
 
   }
 ];
 
 //CONSTANTS
-const MAX_QUESTIONS =21;
- CORRECT1 = 0;
- CORRECT2 = 0;
- CORRECT3 = 0;
+const kira = 10;
+const MAX_QUESTIONS = 21;
+koko1 = 0;
+koko2 = 0;
+koko3 = 0;
 
-
-newGame = () => {
+startdd = () => {
   questionCounter = 0;
-  level = ""
   score = 0;
-  availableQuestions = [...questions];
-  getAns();
-
+  level = "";
+  availableQuesions = [...questions];
+  getN();
 };
 
-getAns = () => {
-  
+getN = () => {
+  if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    if (koko1<8 ){
+      fufu1 = currentQuestion.level1; 
+    }
+    if (koko1>7 && koko1<10 ){
+      fufu1 = currentQuestion.level2;
+    }
+    if (koko1>9 && koko1<14 ){
+      fufu1 = currentQuestion.level3;  
+    }
+    if (koko1>13 && koko1<18 ){
+      fufu2 = currentQuestion.level4;
+    }
+    if (koko1>17 ){
+      fufu2 = currentQuestion.level5;
+    }
+    /////////////////////////////
+    if (koko2<5 ){
+      fufu2 = currentQuestion.level1; 
+    }
+    if (koko2>4 && koko2<7 ){
+      fufu2 = currentQuestion.level2;
+    }
+    if (koko2>6 && koko2<9 ){
+      fufu2 = currentQuestion.level3;  
+    }
+    if (koko2>8 && koko2<11 ){
+      fufu2 = currentQuestion.level4;
+    }
+    if (koko2>10 ){
+      fufu2 = currentQuestion.level5;
+    }
+    //////////////////////////////////////////////////
+    if (koko3<6 ){
+      fufu3 = currentQuestion.level1; 
+    }
+    if (koko3>5 && koko3<8 ){
+      fufu3 = currentQuestion.level2;
+    }
+    if (koko3>7 && koko3<11 ){
+      fufu3 = currentQuestion.level3;  
+    }
+    if (koko3>10 && koko3<13 ){
+      fufu3 = currentQuestion.level4;
+    }
+    if (koko3>14 ){
+      fufu3 = currentQuestion.level5;
+    }
 
-  if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    localStorage.setItem("mostRecentScore1", fufu1);
+    localStorage.setItem("mostRecentScore2", fufu2);
+    localStorage.setItem("mostRecentScore3", fufu3);
     //go to the end page
     return window.location.assign("/score");
   }
- 
   questionCounter++;
   progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
   //Update the progress bar
   progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
-  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-  currentQuestion = availableQuestions[questionIndex];
+  const questionIndex = Math.floor(Math.random() * availableQuesions.length);
+  currentQuestion = availableQuesions[questionIndex];
   question.innerText = currentQuestion.question123;
-  question.num = currentQuestion.id123;
-
+  idQue.innerText = currentQuestion.id123;
 
   choices.forEach(choice => {
     const number = choice.dataset["number"];
     choice.innerText = currentQuestion["choice" + number];
   });
 
-  availableQuestions.splice(questionIndex, 1);
+  availableQuesions.splice(questionIndex, 1);
   acceptingAnswers = true;
 };
 
-///////////////////////////////////////////////////////////////////////////////////
 choices.forEach(choice => {
   choice.addEventListener("click", e => {
     if (!acceptingAnswers) return;
@@ -258,116 +480,54 @@ choices.forEach(choice => {
     acceptingAnswers = false;
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset["number"];
-    CORRECT_BONUS = 0;
+    const classToApply =
+      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"; 
 
-     if (selectedAnswer == 1)
-    {
-       CORRECT_BONUS =0;
-    }
-     if (selectedAnswer == 2)
-    {
-       CORRECT_BONUS =1;
-    }
-     if (selectedAnswer == 3)
-    {
-       CORRECT_BONUS =2;
-    }
-    if (selectedAnswer == 4)
-    {
-       CORRECT_BONUS =3;
-    }
+      if (selectedAnswer==currentQuestion.test1){
+        koko=0;
+      }
+      if (selectedAnswer==currentQuestion.test2){
+        koko=1;
+      }
+      if (selectedAnswer==currentQuestion.test3){
+        koko=2;
+      }
+      if (selectedAnswer==currentQuestion.test4){
+        koko=3;
+      }
+      /////////////////////////////////////////////
 
-//////////////////////////////////    
-    if(question.num == 1 || question.num == 6 || question.num == 8 || question.num == 11 ||question.num == 12|| question.num == 14 || question.num == 18 )
-  {
-     classToApply = "stress";
-     a = CORRECT_BONUS;
-     CORRECT1=CORRECT1 + a;
-     score1Text.innerText = CORRECT1;
+      if(currentQuestion.id123 == 1 || currentQuestion.id123 == 6 || currentQuestion.id123 == 8 || currentQuestion.id123 == 11 ||currentQuestion.id123 == 12|| currentQuestion.id123 == 14 || currentQuestion.id123 == 18 )
+      {
+         koko1=koko1+koko;
+         scoreText1.innerText = koko1;
+      }
+      if(currentQuestion.id123 == 2 || currentQuestion.id123 == 4 || currentQuestion.id123 == 7 || currentQuestion.id123 == 9 ||currentQuestion.id123 == 15|| currentQuestion.id123 == 19 || currentQuestion.id123 == 20 )
+      {
 
+        koko2 = koko2 + koko;
+        scoreText2.innerText = koko2;
+   
+      }
+      if(currentQuestion.id123 == 3 || currentQuestion.id123 == 5 || currentQuestion.id123 == 10 || currentQuestion.id123 == 13 ||currentQuestion.id123 == 16|| currentQuestion.id123 == 17 || currentQuestion.id123 == 21 )
+      { 
     
+        koko3 = koko3 + koko;
+        scoreText3.innerText = koko3;
 
-  }
-   if(question.num == 2 || question.num == 4 || question.num == 7 || question.num == 9 ||question.num == 15|| question.num == 19 || question.num == 20 )
-  {
-    classToApply = "anxiety";
-    b = CORRECT_BONUS;
-    CORRECT2 = CORRECT2 + b;
-    score2Text.innerText = CORRECT2;
+      }
+     
 
-    
-  }
-   if(question.num == 3 || question.num == 5 || question.num == 10 || question.num == 13 ||question.num == 16|| question.num == 17 || question.num == 21 )
-  { 
-    classToApply = "depress";
-    c = CORRECT_BONUS;
-    CORRECT3 = CORRECT3 + c;
-    score3Text.innerText = CORRECT3;
-
-  }
-  
     selectedChoice.parentElement.classList.add(classToApply);
 
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply);
-      getAns();
+      getN();
     }, 500);
-  }); 
+  });
 });
 
 
-if (CORRECT1<8 ){
-  level = "normal";
-}
-if (CORRECT1>7 && CORRECT1<10 ){
-  level = "ringan";
-}
-if (CORRECT1>9 && CORRECT3<14 ){
-  level = "sederhana";  
-}
-if (CORRECT1>13 && CORRECT3<18 ){
-  level = "teruk";
-}
-if (CORRECT1>17 ){
-  level = "sangat teruk";
-}
-result1Text.innerText = level;
 
-///////////////////////////////////////////
 
-if (CORRECT2<5 ){
-  level = "normal";
-}
-if (CORRECT2>4 && CORRECT1<7  ){
-  level = "ringan";
-}
-if (CORRECT2>6 && CORRECT3<9 ){
-  level = "sederhana";
-}
-if (CORRECT2>8 && CORRECT3<11  ){
-  level = "teruk";
-}
-if (CORRECT2>10 ){
-  level = "sangat teruk";
-}
-result2Text.innerText = level;
-
-///////////////////////////////////////
-if (CORRECT3<6 ){
-  level = "normal";
-}
-if (CORRECT3>6 && CORRECT1<8  ){
-  level = "ringan";
-}
-if (CORRECT3>7 && CORRECT3<11 ){
-  level = "sederhana";
-}
-if (CORRECT3>10 && CORRECT3<13  ){
-  level = "teruk";
-}
-if (CORRECT3>14 ){
-  level = "sangat teruk";
-}
-result3Text.innerText = level;
-
-newGame();
+startdd();

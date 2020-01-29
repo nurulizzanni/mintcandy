@@ -66,7 +66,6 @@
 	<script src="{{secure_asset('admin/assets/scripts/klorofil-common.js')}}"></script>
 	<script src="{{secure_asset('dass/score.js')}}"></script>
 	<script src="{{secure_asset('dass/dass1.js')}}"></script>
-	<script src="{{secure_asset('dass/end.js')}}"></script>
 	<script src="{{secure_asset('quote/quote.js')}}"></script>
 	<script src="{{secure_asset('js/app.js') }}"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
