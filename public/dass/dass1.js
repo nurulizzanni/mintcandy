@@ -16,192 +16,192 @@ let questionCounter = 0;
 let availableQuestions = [];
 let questions=[
   {
-    "question123":"Saya rasa susah untuk bertenang",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 1
+    question123:"Saya rasa susah untuk bertenang",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 1
 
   },
   {
-    "question123":"Saya sedar mulut saya rasa kering",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 2
+    question123:"Saya sedar mulut saya rasa kering",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 2
 
   },
   {
-    "question123":"Saya seolah-olah tidak dapat mengalami perasaan positif sama sekali",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 3
+    question123:"Saya seolah-olah tidak dapat mengalami perasaan positif sama sekali",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 3
 
   },
   {
-    "question123":"Saya mengalami kesukaran bernafas (contohnya, bernafas terlalu cepat, tercungap-cungap walaupun tidak melakukan aktiviti fizikal)",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 4
+    question123:"Saya mengalami kesukaran bernafas (contohnya, bernafas terlalu cepat, tercungap-cungap walaupun tidak melakukan aktiviti fizikal)",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 4
 
   },
   {
-    "question123":"Saya rasa tidak bersemangat untuk memulakan sesuatu keadaan",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 5
+    question123:"Saya rasa tidak bersemangat untuk memulakan sesuatu keadaan",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 5
 
   },
   {
-    "question123":"Saya cenderung bertindak secara berlebihan kepada sesuatu keadaan",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 6
+    question123:"Saya cenderung bertindak secara berlebihan kepada sesuatu keadaan",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 6
 
   },
   {
-    "question123":"Saya pernah menggeletar (contohnya tangan)",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 7
+    question123:"Saya pernah menggeletar (contohnya tangan)",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 7
 
   },
   {
-    "question123":"Saya rasa saya terlalu gelisahan",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 8
+    question123:"Saya rasa saya terlalu gelisahan",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 8
 
   },
   {
-    "question123":"Saya risau akan berlaku keadaan di mana saya panik dan berkelakuan bodoh",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 9
+    question123:"Saya risau akan berlaku keadaan di mana saya panik dan berkelakuan bodoh",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 9
 
   },
   {
-    "question123":"Saya rasa tidak ada apa yang saya harapkan (putus harapan)",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 10
+    question123:"Saya rasa tidak ada apa yang saya harapkan (putus harapan)",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 10
 
   },
   {
-    "question123":"Saya dapati saya mudah resah",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 11
+    question123:"Saya dapati saya mudah resah",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 11
 
   },
   {
-    "question123":"Saya berasa sukar untuk relaks",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 12
+    question123:"Saya berasa sukar untuk relaks",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 12
 
   },
   {
-    "question123":"Saya rasa muram dan sedih",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 13
+    question123:"Saya rasa muram dan sedih",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 13
   
   },
   {
-    "question123":"Saya tidak boleh terima apa jua yang menghalangi saya daripada meneruskan apa yang saya sedang lakukan",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 14
+    question123:"Saya tidak boleh terima apa jua yang menghalangi saya daripada meneruskan apa yang saya sedang lakukan",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 14
 
   },
   {
-    "question123":"Saya rasa hampir panik",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 15
+    question123:"Saya rasa hampir panik",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 15
 
   },
   {
-    "question123":"Saya tidak bersemangat langsung",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 16
+    question123:"Saya tidak bersemangat langsung",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 16
 
   },
   {
-    "question123":"Saya rasa diri saya tidak berharga",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 17
+    question123:"Saya rasa diri saya tidak berharga",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 17
 
   },
   {
-    "question123":"Saya mudah tersinggung",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 18
+    question123:"Saya mudah tersinggung",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 18
  
   },
   {
-    "question123":"Walaupun saya tidak melakukan aktiviti fizikal, saya sedar akan debaran jantung saya (contoh degupan jantung lebih cepat)",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 19
+    question123:"Walaupun saya tidak melakukan aktiviti fizikal, saya sedar akan debaran jantung saya (contoh degupan jantung lebih cepat)",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 19
 
   },
   {
-    "question123":"Saya rasa takut tanpa sebab",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 20
+    question123:"Saya rasa takut tanpa sebab",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 20
 
   },
   {
-    "question123":"Saya rasa hidup ini tidak bererti lagi",
-    "choice1": "Tidak Pernah",
-    "choice2": "Jarang",
-    "choice3": "Kerap",
-    "choice4": "Sangat Kerap",
-    "id123": 21
+    question123:"Saya rasa hidup ini tidak bererti lagi",
+    choice1: "Tidak Pernah",
+    choice2: "Jarang",
+    choice3: "Kerap",
+    choice4: "Sangat Kerap",
+    id123: 21
 
   }
 ];
