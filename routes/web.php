@@ -41,17 +41,8 @@ Route::group(['middleware'=>'auth','checkRole:admin'], function(){
     Route::post('/session/{session}/block', 'BlockController@block');
     Route::post('/session/{session}/unblock', 'BlockController@unblock');
     Route::post('/send/{session}', 'ChatController@send');
-
-});
-
-Route::group(['middleware'=>'auth','checkRole:admin, pengguna'], function(){
-
     Route::get('/dashboard','DashboardController@index');
-    Route::get('/start', 'PenggunaController@start');
-    Route::get('/dass1', 'PenggunaController@dass1');
-    Route::get('/score', 'PenggunaController@score')->name('score');
-
-    Route::get('/inspiration', 'PenggunaController@inspiration');   
+  
     Route::get('/pengguna','PenggunaController@index');
     Route::post('/pengguna/create','PenggunaController@create');
     Route::get('/pengguna/{id}/edit','PenggunaController@edit');
@@ -60,5 +51,14 @@ Route::group(['middleware'=>'auth','checkRole:admin, pengguna'], function(){
     Route::get('/pengguna/{id}/profile', 'PenggunaController@profile');
     Route::post('/pengguna/{id}/addnilai', 'PenggunaController@addnilai');
     Route::get('/pengguna/{id}/{idtest}/deletenilai', 'PenggunaController@deletenilai');
+});
+
+Route::group(['middleware'=>'auth','checkRole:admin, pengguna'], function(){
+    Route::get('/start', 'PenggunaController@start');
+    Route::get('/dass1', 'PenggunaController@dass1');
+    Route::get('/score', 'PenggunaController@score')->name('score');
+
+    Route::get('/inspiration', 'PenggunaController@inspiration'); 
+
 });
 
